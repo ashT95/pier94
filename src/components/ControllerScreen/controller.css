@@ -291,7 +291,18 @@
   transform: translate(-22px, -36px);
 }
 
-.progressKnob::-webkit-slider-thumb,
+.progressKnob::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 55px;
+  height: 56px;
+  background-image: url("../../assets/images/control-video-seekbar-knob.png");
+  background-size: 110%;
+  background-position: center center;
+  border-radius: 50%;
+  z-index: 1;
+}
+
 .progressKnob::-moz-range-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -305,7 +316,8 @@
 }
 
 .progressKnob::-ms-thumb {
-
+  -webkit-appearance: none;
+  appearance: none;
   width: 55px;
   height: 56px;
   background-image: url("../../assets/images/control-video-seekbar-knob.png");
